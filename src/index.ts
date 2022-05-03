@@ -31,8 +31,8 @@ const usePaginateCollection = <DocType extends DocumentData = DocumentData>(colR
     sortFunc?: (a: DocType, b: DocType) => number
 }) => {
     const [documents, setDocuments] = useState<DocType[]>([])
-    const [finished, setFinished] = useState(false)
-    const [loading, setLoading] = useState(true)
+    const [finished, setFinished] = useState<boolean>(false)
+    const [loading, setLoading] = useState<boolean>(true)
     const page = useRef<{
         start: QueryDocumentSnapshot<DocType> | null,
         end: QueryDocumentSnapshot<DocType> | null,

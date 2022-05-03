@@ -7,7 +7,7 @@ This is a React hook for Paginating your Firebase Collections in Realtime using 
 Basically, It reads the amount of documents you need per page, then it creates a snapshot listener for that particular page. Thus when any document updates, it will update your page as well.
 
 ## Basic Usage
-```js
+```ts
 const [blogPosts, loadMore, loading, finished] = usePaginateCollection<PostDocument>(collectionRef, {
       orderKey: 'postedDate',
       direction: 'desc',
@@ -25,6 +25,15 @@ return <div>
 ```
 
 ## API Reference
-TBD
+```ts
+const usePaginateCollection = <DocType extends DocumentData = DocumentData>(colRef: CollectionReference<DocType>, {
+    orderKey: string,
+    pageLimit: number,
+    direction: 'asc' | 'desc',
+    queryConstraints?: QueryConstraint[],
+    sortFunc?: (a: DocType, b: DocType) => number
+}) => [DocType[], () => void, boolean, boolean]
+```
+
 
 > Used on [Speer Education](https://www.speeredu.com)

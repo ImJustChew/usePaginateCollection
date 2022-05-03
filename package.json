@@ -1,0 +1,29 @@
+{
+  "name": "usepaginatecollection",
+  "version": "1.0.0",
+  "description": "A React Hook for realtime Firestore collection pagination",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImJustChew/usePaginateCollection.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImJustChew/usePaginateCollection/issues"
+  },
+  "homepage": "https://github.com/ImJustChew/usePaginateCollection#readme",
+  "dependencies": {
+    "@types/react": "^18.0.8",
+    "firebase": "^9.7.0",
+    "react": "^18.1.0",
+    "typescript": "^4.6.4"
+  }
+}

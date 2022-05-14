@@ -35,5 +35,8 @@ const usePaginateCollection = <DocType extends DocumentData = DocumentData>(colR
 }) => [DocType[], () => void, boolean, boolean]
 ```
 
+## Issues
+If there are any issues, feel free to open an issue and i'll fix it ASAP.
+
 
 > Used on [Speer Education](https://www.speeredu.com)
